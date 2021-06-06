@@ -20,4 +20,14 @@
  ## Booking Page
  <img src="https://user-images.githubusercontent.com/75041222/120941591-ba669580-c723-11eb-84ce-4a314b8b75c7.png" width="540" height="400">
  
-the squares shown above represent the seats in the cinema, to select a specific seat, click on them.
+The squares shown above represent the seats in the cinema, to select a specific seat, click on them.
+
+<img src="https://user-images.githubusercontent.com/75041222/120941679-352fb080-c724-11eb-845f-9643990c21ff.png" width="540" height="400">
+
+Free seats are yellow, seats that have already been taken by someone are gray, seats selected by user change color to orange and display their number on them.
+
+You can also see numbers of your selected seats on the left side of Booking Page.
+
+To complete your booking you need to go to the payment page and complete the transaction.
+
+## Payment Page
