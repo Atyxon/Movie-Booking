@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="828.0" prefWidth="1080.0" style="-fx-background-color: #1f1f1f;">
+         <children>
+            <AnchorPane layoutY="-4.0" prefHeight="109.0" prefWidth="1080.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="25.0" layoutY="15.0" text="MOVIE" textFill="#fcba03">
+                     <font>
+                        <Font name="Calibri Bold" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="49.0" text="BOOKING" textFill="#fcba03">
+                     <font>
+                        <Font name="Calibri Bold" size="46.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="105.0" prefHeight="696.0" prefWidth="183.0" style="-fx-background-color: #fcba03;">
+               <children>
+                  <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#clickHomepage" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: transparent; -fx-border-radius: 28; -fx-border-color: #000000; -fx-border-width: 5;" text="HOMEPAGE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="77.0" mnemonicParsing="false" onAction="#clickRepertoire" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: transparent; -fx-border-radius: 28; -fx-border-color: #000000; -fx-border-width: 5;" text="REPRTOIRE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="127.0" mnemonicParsing="false" onAction="#clickPricelist" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: transparent; -fx-border-radius: 28; -fx-border-color: #000000; -fx-border-width: 5;" text="PRICE LIST">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="639.0" mnemonicParsing="false" onAction="#clickAboutus" prefHeight="41.0" prefWidth="153.0" style="-fx-background-color: transparent; -fx-border-radius: 28; -fx-border-color: #000000; -fx-border-width: 5;" text="ABOUT US">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="homepage" layoutX="182.0" layoutY="104.0" prefHeight="696.0" prefWidth="898.0" visible="false">
+               <children>
+                  <Label layoutX="676.0" layoutY="20.0" text="TRENDING" textFill="#fcba03">
+                     <font>
+                        <Font name="System Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="591.0" layoutY="338.0" text="COMING SOON" textFill="#fcba03">
+                     <font>
+                        <Font name="System Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="31.0" layoutY="66.0" prefHeight="265.0" prefWidth="845.0" style="-fx-background-color: transparent;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="843.0" style="-fx-background-color: #1f1f1f;">
+                           <children>
+                              <GridPane hgap="15.0" layoutX="-1.0" layoutY="14.0" prefHeight="265.0" prefWidth="845.0" style="-fx-background-color: #1f1f1f;">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: #1f1f1f;" GridPane.columnIndex="2">
+                                       <children>
+                                          <ImageView fx:id="movieImage_3" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/bogowie.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="55.0" layoutY="232.0" text="Bogowie" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3">
+                                       <children>
+                                          <ImageView fx:id="movieImage_4" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/creed.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="5.0" layoutY="233.0" text="Creed: Narodziny legendy" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4">
+                                       <children>
+                                          <ImageView fx:id="movieImage_5" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/armia.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="34.0" layoutY="232.0" text="Armia umarłych" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <ImageView fx:id="movieImage_1" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/nomadland.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="46.0" layoutY="232.0" text="Nomadland" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="movieButton" mnemonicParsing="false" onAction="#openMoviePage" prefHeight="250.0" prefWidth="159.0" style="-fx-background-color: transparent;" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+                                       <children>
+                                          <ImageView fx:id="movieImage_2" fitHeight="228.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/ojciec.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="61.0" layoutY="232.0" text="Ojciec" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <ScrollPane layoutX="31.0" layoutY="402.0" prefHeight="265.0" prefWidth="845.0" style="-fx-background-color: transparent;">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="843.0">
+                           <children>
+                              <GridPane hgap="15.0" prefHeight="265.0" prefWidth="845.0" style="-fx-background-color: #1f1f1f;">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <ImageView fx:id="movieImage_6" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/mortal.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="36.0" layoutY="242.0" text="Mortal kombat" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+                                       <children>
+                                          <ImageView fx:id="movieImage_7" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/godzilla.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="30.0" layoutY="242.0" text="Godzilla vs. Kong" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2">
+                                       <children>
+                                          <ImageView fx:id="movieImage_8" fitHeight="236.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/szybcy.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="28.0" layoutY="242.0" text="Szybcy i wściekli 9" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3">
+                                       <children>
+                                          <ImageView fx:id="movieImage_9" fitHeight="246.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/minari.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="63.0" layoutY="242.0" text="Minari" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="265.0" prefWidth="656.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4">
+                                       <children>
+                                          <ImageView fx:id="movieImage_10" fitHeight="236.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Desktop/images/obecnosc.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="46.0" layoutY="242.0" text="Obecność 3" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="bookingpage" layoutX="182.0" layoutY="105.0" prefHeight="696.0" prefWidth="898.0" visible="false">
+               <children>
+                  <GridPane layoutX="308.0" layoutY="256.0" prefHeight="389.0" prefWidth="490.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="seat_1" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_2" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_3" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_4" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_5" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_6" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_7" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_8" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_9" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_10" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_11" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_12" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_13" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_14" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_15" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_16" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_17" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_18" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_19" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="seat_20" mnemonicParsing="false" onAction="#selectSeat" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #fcba03;" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="bookingMovieName" layoutX="45.0" layoutY="14.0" prefHeight="52.0" prefWidth="311.0" text="movieName" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="510.0" layoutY="169.0" text="screen" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="308.0" layoutY="199.0" prefHeight="12.0" prefWidth="472.0" style="-fx-background-color: #ffffff;" />
+                  <Label alignment="TOP_LEFT" layoutX="45.0" layoutY="256.0" prefHeight="80.0" prefWidth="186.0" text="LEGEND" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="45.0" layoutY="321.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #404040;" />
+                  <Label layoutX="91.0" layoutY="310.0" prefHeight="52.0" prefWidth="134.0" text="TAKEN" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="45.0" layoutY="362.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #fcba03;" />
+                  <Label layoutX="91.0" layoutY="351.0" prefHeight="52.0" prefWidth="134.0" text="FREE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="45.0" layoutY="403.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #fc7303;" />
+                  <Label layoutX="91.0" layoutY="392.0" prefHeight="52.0" prefWidth="134.0" text="SELECTED" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="selectedSeats" alignment="TOP_LEFT" layoutX="45.0" layoutY="463.0" prefHeight="92.0" prefWidth="186.0" text="SELECTED SEATS:" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="45.0" layoutY="595.0" mnemonicParsing="false" onAction="#openPaymentPage" prefHeight="61.0" prefWidth="186.0" text="GO TO PAYMENT">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="moviepage" layoutX="182.0" layoutY="104.0" prefHeight="696.0" prefWidth="898.0" visible="false">
+               <children>
+                  <ImageView fx:id="moviepageSplashart" fitHeight="347.0" fitWidth="225.0" layoutX="35.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/images/godzilla.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="movieName" alignment="TOP_LEFT" layoutX="279.0" layoutY="14.0" prefHeight="61.0" prefWidth="406.0" text="Godzilla vs. Kong" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="movieDesc" alignment="TOP_LEFT" layoutX="279.0" layoutY="75.0" prefHeight="282.0" prefWidth="490.0" text="Król Potworów z nieznanych przyczyn zaczyna siać spustoszenie na całym globie. W obliczu zagrożenia, grupa ludzi postanawia przeciwstawić mu mitycznego Konga." textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="35.0" layoutY="385.0" mnemonicParsing="false" onAction="#openBookingPage" prefHeight="69.0" prefWidth="225.0" text="Book now">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paymentPage" layoutX="183.0" layoutY="105.0" prefHeight="696.0" prefWidth="898.0" visible="false">
+               <children>
+                  <AnchorPane layoutX="53.0" layoutY="50.0" prefHeight="609.0" prefWidth="406.0" style="-fx-background-color: #171717; -fx-background-radius: 30;">
+                     <children>
+                        <GridPane layoutX="46.0" layoutY="39.0" prefHeight="187.0" prefWidth="346.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="billLabel_1" prefWidth="331.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="billLabel_2" prefWidth="331.0" textFill="WHITE" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="billLabel_3" prefWidth="331.0" textFill="WHITE" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="billLabel_4" prefWidth="331.0" textFill="WHITE" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="53.0" layoutY="479.0" prefHeight="31.0" prefWidth="67.0" text="Total:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCost" alignment="CENTER_RIGHT" layoutX="180.0" layoutY="479.0" prefHeight="31.0" prefWidth="173.0" text="91.60 PLN" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="53.0" layoutY="533.0" mnemonicParsing="false" onAction="#payForBooking" prefHeight="41.0" prefWidth="300.0" style="-fx-background-radius: 20;" text="PAY">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="aboutUsPage" layoutX="183.0" layoutY="105.0" prefHeight="696.0" prefWidth="898.0">
+               <children>
+                  <Label layoutX="237.0" layoutY="283.0" prefHeight="131.0" prefWidth="425.0" text="There would something here but  its just demo" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="repetoirePage" layoutX="183.0" layoutY="105.0" prefHeight="696.0" prefWidth="898.0" visible="false">
+               <children>
+                  <Label layoutX="41.0" layoutY="23.0" text="REPERTOIRE:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="priceListPage" layoutX="185.0" layoutY="105.0" prefHeight="696.0" prefWidth="898.0" visible="false">
+               <children>
+                  <Label layoutX="34.0" layoutY="29.0" text="PRICE LIST:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="86.0" text="Regular ticket - 22.90 PLN" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
