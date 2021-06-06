@@ -18,3 +18,6 @@
  On this page you can read description of selected movie, and also move to booking page.
   
  ## Booking Page
+ <img src="https://user-images.githubusercontent.com/75041222/120941591-ba669580-c723-11eb-84ce-4a314b8b75c7.png" width="540" height="400">
+ 
+the squares shown above represent the seats in the cinema, to select a specific seat, click on them.
