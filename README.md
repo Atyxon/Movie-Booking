@@ -33,7 +33,7 @@ To complete your booking you need to go to the payment page and complete the tra
 ## Payment Page
 <img src="https://user-images.githubusercontent.com/75041222/120941802-0ebe4500-c725-11eb-9045-b0564b809566.png" width="440" height="325">
 
-After selecting the places, it's time for payment.
+After selecting the places, it's time for payment. The price of individual tickets and the total price to be paid is clearly written on the panel above.
 
 There isn't realy any payment, just big button saying "PAY", but its enough to book your seats.
 
