@@ -31,3 +31,8 @@ You can also see numbers of your selected seats on the left side of Booking Page
 To complete your booking you need to go to the payment page and complete the transaction.
 
 ## Payment Page
+<img src="https://user-images.githubusercontent.com/75041222/120941802-0ebe4500-c725-11eb-9045-b0564b809566.png" width="540" height="400">
+
+After selecting the places, it's time for payment.
+
+There isn't realy any payment, just big button saying "PAY", but its enough to book your seats.
